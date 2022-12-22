@@ -2,7 +2,8 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item logo" @click="$router.push('/').catch(() => {})">
-        <img :src="this.$store.state.config.logo">
+        <!-- <img :src="this.$store.state.config.logo"> -->
+        <h1 style="font-weight: bold; font-size: 1.5rem;">Paciano A. Sena Memorial High School</h1>
       </a>
 
       <a :class="[navbarActive ? 'is-active' : '', 'navbar-burger burger']" role="button" aria-label="menu" aria-expanded="false" @click="navbarActive = !navbarActive">
@@ -87,6 +88,7 @@ export default {
 .navbar {
   z-index: 10;
 }
+
 @media all and (max-width: 1088px) {
   .logo {
     padding: 0;

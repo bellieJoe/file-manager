@@ -9,7 +9,9 @@
         <form @submit.prevent="login">
           <div class="box">
             <div class="has-text-centered">
-              <img :src="$store.state.config.logo" class="logo">
+              <!-- <img :src="$store.state.config.logo" class="logo"> -->
+              <h1 class="title is-2 has-text-primary" >File Sharing</h1>
+              <h1 class="subtitle">Paciano A. Sena Memorial High School</h1>
             </div>
             <br>
             <b-field :label="lang('Username')">
