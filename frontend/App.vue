@@ -37,7 +37,7 @@ $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
 // Disable the widescreen breakpoint
-$widescreen-enabled: false;
+$widescreen-enabled: true;
 
 // Disable the fullhd breakpoint
 $fullhd-enabled: false;
