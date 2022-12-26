@@ -49,6 +49,7 @@ class AuthController
     public function getUser(Response $response, AuthInterface $auth)
     {
         $user = $auth->user() ?: $auth->getGuest();
+        // $user = $auth->getGuest();
 
         return $response->json($user);
     }

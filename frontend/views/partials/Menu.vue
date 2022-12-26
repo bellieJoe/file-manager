@@ -3,7 +3,7 @@
     <div class="navbar-brand">
       <a class="navbar-item logo" @click="$router.push('/').catch(() => {})">
         <!-- <img :src="this.$store.state.config.logo"> -->
-        <h1 style="font-weight: bold; font-size: 1.5rem;">Paciano A. Sena Memorial High School</h1>
+        <h1 style="font-weight: bold; font-size: 1.5rem;">File Sharing</h1>
       </a>
 
       <a :class="[navbarActive ? 'is-active' : '', 'navbar-burger burger']" role="button" aria-label="menu" aria-expanded="false" @click="navbarActive = !navbarActive">

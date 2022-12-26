@@ -37,12 +37,12 @@ new Vue({
   router,
   store,
   created: function() {
-
     api.getConfig()
       .then(ret => {
         this.$store.commit('setConfig', ret.data.data)
         api.getUser()
           .then((user) => {
+            console.log(user)
             this.$store.commit('initialize')
             this.$store.commit('setUser', user)
             this.$router.push('/').catch(() => {})

@@ -4,7 +4,6 @@
 /dist/js
 /dist/main.html
 
-/configuration.php
 
 /tests/backend/coverage
 /tests/backend/tmp/repository/*

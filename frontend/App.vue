@@ -1,18 +1,19 @@
 <template>
   <div v-if="$store.state.initialized" id="wrapper">
-    <Login v-if="is('guest') && ! can('write') && ! can('read') && ! can('upload')" />
+    <!-- <Login v-if="is('guest') && ! can('write') && ! can('read') && ! can('upload')" />
     <div v-else id="inner">
       <router-view />
-    </div>
+    </div> -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import Login from './views/Login'
+// import Login from './views/Login'
 
 export default {
   name: 'App',
-  components: { Login }
+  // components: { Login }
 }
 </script>
 
@@ -20,7 +21,8 @@ export default {
 @import "~bulma/sass/utilities/_all";
 
 // Primary color
-$primary: #34B891;
+// $primary: #34B891;
+$primary: #3b4496;
 $primary-invert: findColorInvert($primary);
 
 $colors: (
