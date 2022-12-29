@@ -14,7 +14,6 @@
 
     <div v-if="!dropZone" class="container">
       <Menu />
-
       <div id="browser">
         <div v-if="can('read')" class="is-flex is-justify-between">
           <div class="breadcrumb" aria-label="breadcrumbs">

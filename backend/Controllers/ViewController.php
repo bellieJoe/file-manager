@@ -25,4 +25,8 @@ class ViewController
     {
         return $response->json($config->get('frontend_config'));
     }
+
+    public function testing(){
+        return "testing";
+    }
 }
